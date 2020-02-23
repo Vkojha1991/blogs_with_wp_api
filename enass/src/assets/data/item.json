@@ -1,0 +1,26 @@
+[
+    {
+        "item": "T-shirt",
+        "size":"XL",
+        "remains": 15,
+        "color":"red"
+    },
+    {
+        "item": "Shirt",
+        "size":"M",
+        "remains": 25,
+        "color":"Green"
+    },
+    {
+        "item": "Shirt",
+        "size":"S",
+        "remains": 5,
+        "color":"Pink"
+    },
+    {
+        "item": "T-Shirt",
+        "size":"M",
+        "remains": 18,
+        "color":"Yellow"
+    }
+]

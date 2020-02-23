@@ -1,0 +1,158 @@
+/**
+ * Theme Name:     Gist Masonry
+ * Author:         candidthemes
+ * Template:       gist
+ * Text Domain:	   gist-masonry
+ * Description:    Gist Masonry is the Child Theme of Gist. It has the masonry layout on blog and archive page. This theme is best ever crafted free WordPress theme for Blog, news and Magazine. It is a simple, easy to use, modern and creative, user friendly WordPress theme with typography, fonts and color options. In addition Gist Masonry is responsive, cross browser compatible child theme. Gist Masonry comes with added custom widgets for social and author, sticky sidebar options, footer widget, sidebar options, meta option, copyright option, social options etc.
+ * Theme URI:      https://www.candidthemes.com/themes/gist-masonry-free-wordpress-theme/
+ * Author URI:     https://www.candidthemes.com/
+ * Version:        1.0.0
+ * License:        GNU General Public License v2 or later
+ * License URI:    http://www.gnu.org/licenses/gpl-2.0.html
+ * Tags:           two-columns, right-sidebar, custom-background, custom-colors, custom-menu, featured-images, theme-options, threaded-comments, translation-ready, blog
+*/
+/*---------------------------------------------------
+*   Widget Design
+*   ----------------------------------------------------- */
+.widget ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+/*---------------------------------------------------
+*   Carousel
+*   ----------------------------------------------------- */
+ul.ct-carousel{
+    margin-left: 0;
+    margin-bottom: 20px;
+    padding: 0;
+    overflow: hidden;
+
+}
+.ct-carousel-inner{
+    position: relative;
+}
+.slide-details{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    background: rgba(0, 0, 0, 0.4);
+    padding: 15px 25px;
+}
+.slide-details a{
+    color: #fff;
+}
+.slick-prev{
+    left: 25px;
+    z-index: 1;
+}
+.slick-next{
+    right: 25px;
+    z-index: 1;
+}
+.slick-next:before,
+.slick-prev:before{
+    font-size: 30px;
+}
+/*---------------------------------------------------
+*   Post Column
+*   ----------------------------------------------------- */
+.ct-col-2{
+    width: 100%;
+}
+@media screen and (min-width: 768px) {
+    #main:after{
+        display: table;
+        clear: both;
+        width: 0;
+        height: 0;
+        content: '';
+    }
+    .ct-col-2{
+        width: 50%;
+        float: left;
+        background: none;
+        padding-right: 15px;
+        padding-left: 15px;
+    }
+    .ct-col-2 .p-15{
+        background: #fff;
+    }
+    .ct-col-2:nth-child(2n+1){
+        clear: left;
+    }
+    .ct-col-2:nth-child(2n){
+        margin-right: 0;
+    }
+    .no-sidebar .gist-masonry-container .ct-col-2{
+       width: 33.33%;
+   }
+}
+/*---------------------------------------------------
+*   Buttons
+*   ----------------------------------------------------- */
+.btn-primary, .btn-primary:visited{
+   color: #fff;
+}
+/*---------------------------------------------------
+*   Title
+*   ----------------------------------------------------- */
+.entry-title, .entry-title a, .entry-title a:visited{
+    color: #1a1a1a;
+}
+/*---------------------------------------------------
+*   Comment Form
+*   ----------------------------------------------------- */
+.comment-form label {
+    display: inline-block;
+}
+.comment-form input[type="checkbox"]{
+    margin-right: 5px;
+}
+/*---------------------------------------------------
+*   Sidebar/Widget Area
+*   ----------------------------------------------------- */
+.sidebar-inner{
+    background: #fff;
+}
+.sidebar-inner .widget-title{
+    text-align: left;
+}
+.sidebar-inner .widget-title:after{
+    left: 0;
+    margin-left: 0;
+}
+#secondary .widget{
+    margin-bottom: 10px;
+    padding-bottom: 0;
+}
+@media screen and (min-width: 768px) {
+    .home.right-sidebar #secondary, .archive.right-sidebar #secondary {
+        padding-left: 0;
+    }
+    .home.left-sidebar #secondary, .archive.left-sidebar #secondary {
+        padding-right: 0;
+    }
+    .archive #main .breadcrumbs, .archive #main .page-header{
+        padding-left: 15px;
+    }
+    .archive #main .breadcrumbs .breadcrumbs{
+        padding-left: 0;
+    }
+}
+/*---------------------------------------------------
+*   Pagination
+*   ----------------------------------------------------- */
+.home nav.posts-navigation,
+.archive nav.posts-navigation{
+    padding-bottom: 20px;
+}
+@media screen and (min-width: 768px) {
+    .home nav.posts-navigation,
+    .archive nav.posts-navigation{
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+}
